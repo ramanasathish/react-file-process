@@ -34,7 +34,7 @@ function Products() {
                     <tbody>
 
                         {successList.map((item) =>
-                            <tr>
+                            <tr key={item.id}>
                                 <td>{item.id}</td>
                                 <td>{item.name}</td>
                                 <td>{item.quantity}</td>
@@ -60,7 +60,7 @@ function Products() {
                     <tbody>
 
                         {errorList.map((item) =>
-                            <tr>
+                            <tr key={item.id}>
                                 <td>{item.id}</td>
                                 <td>{item.name}</td>
                                 <td>{item.quantity}</td>
